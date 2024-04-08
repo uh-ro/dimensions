@@ -1,0 +1,39 @@
+{
+  "name": "@uh-ro/dimensions",
+  "version": "0.0.0",
+  "description": "@uh-ro/dimensions is a utility package that streamlines the process of creating responsive designs in React Native applications. It is inspired by viewport units - (`vh` and `vw`) in CSS, and simplifies the process of scaling dimensions and fonts based on a base dimension.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uh-ro/dimensions.git"
+  },
+  "keywords": [
+    "react-native",
+    "adaptive-layout",
+    "viewport-units",
+    "responsive-ui",
+    "ios-android",
+    "scaled-text",
+    "font-size-scaling",
+    "window-screen-dimensions",
+    "dynamic-height-width",
+    "dimension-methods"
+  ],
+  "author": "ifeanyi ugwu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uh-ro/dimensions/issues"
+  },
+  "homepage": "https://github.com/uh-ro/dimensions#readme",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-native": ">=0.70.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.74",
+    "@types/react-native": "^0.73.0"
+  }
+}
