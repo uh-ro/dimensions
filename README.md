@@ -173,9 +173,13 @@ ra(value: number, { inputBaseWidth = baseWidth, inputBaseHeight = baseHeight, di
 
 ## Note: Usage for Fonts
 
+The `rw` function can be used to handle font sizes dynamically. For instance, calling `rw(20)` will calculate a font size value that is scaled based on the ratio of the smaller dimension of the window/screen to the `inputBaseWidth`.
+
 The `dg` function returns a percentage of the screen's diagonal. For example, passing `dg(2.11)` would return a calculated value representing 2.11 percent of the screen's diagonal. This can be useful for dynamically adjusting font sizes.
 
-The `rw` function can also be used to handle font sizes dynamically. For instance, calling `rw(20)` will calculate a font size value that is scaled based on the ratio of the smaller dimension of the window/screen to the `inputBaseWidth`.
+## Examples
+
+You can try out live [examples](https://snack.expo.dev/@valentineifeanyi/react-native-uh-ro-_dimensions-example) on Expo Snack:
 
 ## Contributing
 
