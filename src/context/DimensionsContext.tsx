@@ -1,7 +1,12 @@
-import React, { createContext, useEffect, useState } from "react";
-import { Dimensions } from "react-native";
+import React, { createContext, useEffect, useState, ReactNode } from "react";
+import { Dimensions, ScaledSize } from "react-native";
 
 // I am not using the useWindowsDimension hook from react native for compatibility issues
+interface DimensionsProviderProps {
+  children: ReactNode;
+  baseWidth?: number;
+  baseHeight?: number;
+}
 
 export const DimensionsContext = createContext({
   window: Dimensions.get("window"),
@@ -14,7 +19,7 @@ export const DimensionsProvider = ({
   children,
   baseWidth = 393,
   baseHeight = 852,
-}) => {
+}: DimensionsProviderProps) => {
   const [dimensions, setDimensions] = useState({
     window: Dimensions.get("window"),
     screen: Dimensions.get("screen"),
@@ -23,7 +28,13 @@ export const DimensionsProvider = ({
   });
 
   useEffect(() => {
-    const onChange = ({ window, screen }) => {
+    const onChange = ({
+      window,
+      screen,
+    }: {
+      window: ScaledSize;
+      screen: ScaledSize;
+    }) => {
       setDimensions({
         window,
         screen,

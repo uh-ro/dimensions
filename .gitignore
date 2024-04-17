@@ -3,4 +3,10 @@
 # dependencies
 /node_modules
 
-uh-ro-dimensions-0.0.0.tgz
+# production
+/dist
+/types
+
+# misc
+.npmignore
+*.tgz
